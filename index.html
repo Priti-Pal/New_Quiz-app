@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz-App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="image">
+<div id="app">
+        <header>
+            <h1>Quiz App</h1>
+        </header>   
+        <main>
+            <div id="info_box">
+                <div class="info_tittle"><h2>Rules of this Quiz </h2></div>
+                <div class="info_list">
+                    <div class="info">1. You will have only <span>15 seconds</span> per each question.</div>
+                    <div class="info">2.You will get result on the basis of your correct answers.</div>
+                </div>
+                <div class="button"><button id="continue-quiz-btn">Continue</button></div>
+                <br>
+            </div>
+           <div id="dashboard" style="display: none;">
+                <h2>Hello User</h2>
+                <span>Select category you want to start >></span>
+                <div class="category">
+                    <input type="radio" name="question" id="">Programming
+                    <input type="radio" name="question" id="">Politics
+                    <input type="radio" name="question" id="">Physics
+                    <input type="radio" name="question" id="">Chemistry
+                </div>
+                <br>
+                <span>Enter your name to continue the Quiz</span>
+                <form class="user-form-dashboard">
+                    <div class="username-dashboard">
+                        <input type="text" id="username" name="username" placeholder="ENTER YOUR NAME....">
+                    </div>
+                    <button id="start-quiz-btn">Start Quiz</button>
+                </form>
+                <br>
+            </div>
+            <div id="quiz-container" style="display: none;">
+                <content>
+                <h2>Quiz</h2>
+                <div id="timer"></div>
+            <content>
+                <form id="quiz-form">
+                    <div id="question"></div>
+                    <div id="options"></div>
+                   <button id="next-question-btn" disabled>Next Question</button>
+            </form>
+            </div>
+
+            <div id="score-board" style="display: none;">
+                <h2>Score Board</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Username</th>
+                            <th>Score</th>
+                        </tr>
+                    </thead>
+                    <tbody id="score-board-body"></tbody>
+                </table>
+                    <button id="quit">Exit</button>
+                </div>
+            </main>
+    </div>
+</div>
+    <script src="index.js"></script>
+</body>
+
+</html>
